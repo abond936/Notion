@@ -1,4 +1,4 @@
-<body onload="startTime(); startDate()">
+<body>
     <div class="container">
       <div id="display"></div>
         <div id="content">
@@ -15,10 +15,6 @@
 function genQuote() {
   var randNum = Math.floor(Math.random() * (quotes.length)) + 1;
   document.getElementById('quote').innerHTML = quotes[randNum];
-  var tweetQuote = quotes[randNum].split(' ').join('%20');
-  tweetQuote = tweetQuote.split('<br>').join('');
-  tweetQuote = "https://twitter.com/intent/tweet?text=" + tweetQuote.split('"').join('')
-  $('.twitter-share-button').attr('href', tweetQuote);
 }
 
 //quote array
