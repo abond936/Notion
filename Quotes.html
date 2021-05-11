@@ -1,15 +1,25 @@
-    <link rel="stylesheet" type="text/css" href="https://?????.css">
-  <body onload="startTime(); startDate()">
+<body onload="startTime(); startDate()">
     <div class="container">
-      <div id="date"></div>
       <div id="display"></div>
-      <div id="content">
+        <div id="content">
         <p id="quote">"the people who are crazy enough to think they can change the world are the ones who do." <br/>- Steve Jobs</p>
       </div>
     </div>
     <div id="b-nav">
       <ul>
         <button id="gen" onclick="genQuote()">New Quote</button>
-        <a class="twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet?text=the%20people%20who%20are%20crazy%20enough%20to%20think%20they%20can%20change%20the%20world%20are%20the%20ones%20who%20do.%20-%20Steve%20Jobs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
       </ul>
     </div>
+
+//quote function
+function genQuote() {
+  var randNum = Math.floor(Math.random() * (quotes.length)) + 1;
+  document.getElementById('quote').innerHTML = quotes[randNum];
+  var tweetQuote = quotes[randNum].split(' ').join('%20');
+  tweetQuote = tweetQuote.split('<br>').join('');
+  tweetQuote = "https://twitter.com/intent/tweet?text=" + tweetQuote.split('"').join('')
+  $('.twitter-share-button').attr('href', tweetQuote);
+}
+
+//quote array
+var quotes = ["Blank", "\"Dude, suckin' at something is the first step at being sorta good at something.\"<br>-  Jake <small><em>(Adventure Time)</em></small>", "\"Either I will find a way, or I will make one.\"<br> - Philip Sidney", "\"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.\"<br>- Thomas A. Edison", "\"You are never too old to set another goal or to dream a new dream.\"<br>- C.S Lewis", "\"If you can dream it, you can do it.\"<br>- Walt Disney", "\"Never give up, for that is just the place and time that the tide will turn.\"<br>- Harriet Beecher Stowe", "\"I know where I'm going and I know the truth, and I don't have to be what you want me to be. I'm free to be what I want.\"<br>- Muhammad Ali", "\"If you always put limit on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them.\"<br>- Bruce Lee",];
