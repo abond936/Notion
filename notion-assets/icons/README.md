@@ -1,5 +1,7 @@
 This folder hosts the live reusable icon library for the Notion workspace.
 
+Folder names under the domain-colored packs are stable ids carried forward from the first generated set. Treat the file contents and `color-metadata.tsv` as the source of truth for the actual color, not the legacy hex embedded in the folder name.
+
 ## Current Structure
 
 - root gray set:
