@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notion Asset Library</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111318;
+      --panel: #1a1d24;
+      --text: #f3f5f7;
+      --muted: #aab4c0;
+      --line: #2b313d;
+      --accent: #60a5fa;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(180deg, #0d1015 0%, #151a22 100%);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: color-mix(in srgb, var(--panel) 88%, black);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    code {
+      color: #cde3ff;
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Notion Asset Library</h1>
+    <p>This GitHub Pages site hosts stable HTTPS assets for Notion icons and covers.</p>
+    <div class="grid">
+      <section class="card">
+        <h2>Icons</h2>
+        <p>Store reusable SVG or PNG icons in <code>/icons</code>.</p>
+      </section>
+      <section class="card">
+        <h2>Covers</h2>
+        <p>Store reusable page cover images in <code>/covers</code>.</p>
+      </section>
+      <section class="card">
+        <h2>Usage</h2>
+        <p>Apply direct file URLs from this site into Notion for page icons or covers.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
