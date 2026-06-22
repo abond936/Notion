@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 600" role="img" aria-label="Abstract blue network cover with wider margins">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a2342"/>
+      <stop offset="50%" stop-color="#0b66c3"/>
+      <stop offset="100%" stop-color="#06121f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#9dd8ff" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#44b5ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#44b5ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1500" height="600" fill="url(#bg)"/>
+  <rect width="1500" height="600" fill="url(#glow)"/>
+
+  <g transform="translate(210 85) scale(0.72)">
+    <g stroke="#8dd8ff" stroke-opacity="0.45" stroke-width="2" fill="none">
+      <path d="M120 410 L290 250 L455 320 L610 180 L760 250 L935 120 L1120 205 L1290 130"/>
+      <path d="M90 290 L260 170 L430 230 L595 110 L760 195 L930 280 L1105 230 L1320 320"/>
+      <path d="M150 500 L330 380 L520 430 L680 320 L845 390 L1015 300 L1180 355 L1350 255"/>
+      <path d="M250 120 L360 260 L505 220 L675 275 L815 155 L985 205 L1130 115"/>
+      <path d="M230 450 L360 260 L520 430 L675 275 L845 390 L1005 505 L1180 355"/>
+    </g>
+
+    <g fill="#d7f0ff">
+      <circle cx="120" cy="410" r="7"/>
+      <circle cx="290" cy="250" r="7"/>
+      <circle cx="455" cy="320" r="8"/>
+      <circle cx="610" cy="180" r="9"/>
+      <circle cx="760" cy="250" r="10"/>
+      <circle cx="935" cy="120" r="11"/>
+      <circle cx="1120" cy="205" r="9"/>
+      <circle cx="1290" cy="130" r="8"/>
+      <circle cx="90" cy="290" r="7"/>
+      <circle cx="260" cy="170" r="8"/>
+      <circle cx="430" cy="230" r="8"/>
+      <circle cx="595" cy="110" r="9"/>
+      <circle cx="930" cy="280" r="8"/>
+      <circle cx="1320" cy="320" r="7"/>
+      <circle cx="150" cy="500" r="7"/>
+      <circle cx="330" cy="380" r="9"/>
+      <circle cx="520" cy="430" r="8"/>
+      <circle cx="680" cy="320" r="10"/>
+      <circle cx="845" cy="390" r="9"/>
+      <circle cx="1015" cy="300" r="9"/>
+      <circle cx="1350" cy="255" r="8"/>
+    </g>
+
+    <g fill="#8dd8ff" filter="url(#softGlow)" opacity="0.85">
+      <circle cx="610" cy="180" r="20"/>
+      <circle cx="760" cy="250" r="24"/>
+      <circle cx="935" cy="120" r="26"/>
+      <circle cx="680" cy="320" r="18"/>
+      <circle cx="1015" cy="300" r="18"/>
+    </g>
+  </g>
+</svg>
