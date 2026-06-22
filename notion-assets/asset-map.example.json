@@ -1,0 +1,24 @@
+{
+  "base_url": "https://<owner>.github.io/<repo>",
+  "icons": {
+    "domains": "icons/triangle-alternate_gray.svg",
+    "values": "icons/circle-alternate_gray.svg",
+    "visions": "icons/view_gray.svg",
+    "goals": "icons/bullseye_gray.svg",
+    "strategies": "icons/chess-knight_gray.svg",
+    "tasks": "icons/checkmark-square_gray.svg",
+    "notes": "icons/document_gray.svg",
+    "beliefs": "icons/thought_gray.svg",
+    "books": "icons/book_gray.svg",
+    "quotes": "icons/chat_gray.svg",
+    "foods": "icons/apple_gray.svg",
+    "meals": "icons/fork-and-knife_gray.svg",
+    "charts": "icons/chart-line_gray.svg",
+    "habits": "icons/repeat_gray.svg"
+  },
+  "covers": {
+    "sample_cover": "covers/sample-cover.svg",
+    "pjournal_default": "covers/pjournal-default.png",
+    "strategy_mindset_default": "covers/strategy-mindset-default.png"
+  }
+}
