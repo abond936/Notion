@@ -1,0 +1,75 @@
+{
+  "base_raw_url": "https://raw.githubusercontent.com/abond936/Notion/main/notion-assets",
+  "repository": "abond936/Notion",
+  "icon_sets": {
+    "default_gray": {
+      "path_prefix": "icons",
+      "description": "Neutral gray object and database icons."
+    },
+    "light_f1f1ef": {
+      "path_prefix": "icons/notion-icon-pack-light-f1f1ef",
+      "description": "Light icon set tuned for dark mode."
+    },
+    "personal_purple": {
+      "path_prefix": "icons/notion-icon-pack-personal-purple-a78bfa",
+      "description": "Personal domain icon set."
+    },
+    "social_red": {
+      "path_prefix": "icons/notion-icon-pack-social-red-f87171",
+      "description": "Social domain icon set."
+    },
+    "experiential_blue": {
+      "path_prefix": "icons/notion-icon-pack-experiential-blue-60a5fa",
+      "description": "Experiential domain icon set."
+    },
+    "commercial_green": {
+      "path_prefix": "icons/notion-icon-pack-commercial-green-4ade80",
+      "description": "Commercial domain icon set."
+    }
+  },
+  "icon_files": {
+    "domains": "triangle-alternate_gray.svg",
+    "values": "circle-alternate_gray.svg",
+    "visions": "view_gray.svg",
+    "goals": "bullseye_gray.svg",
+    "strategies": "chess-knight_gray.svg",
+    "tasks": "checkmark-square_gray.svg",
+    "notes": "document_gray.svg",
+    "beliefs": "thought_gray.svg",
+    "books": "book_gray.svg",
+    "quotes": "chat_gray.svg",
+    "foods": "apple_gray.svg",
+    "meals": "fork-and-knife_gray.svg",
+    "charts": "chart-line_gray.svg",
+    "habits": "repeat_gray.svg"
+  },
+  "goal_domain_icons": {
+    "Personal": "icons/notion-icon-pack-personal-purple-a78bfa/bullseye_gray.svg",
+    "Social": "icons/notion-icon-pack-social-red-f87171/bullseye_gray.svg",
+    "Experiential": "icons/notion-icon-pack-experiential-blue-60a5fa/bullseye_gray.svg",
+    "Commercial": "icons/notion-icon-pack-commercial-green-4ade80/bullseye_gray.svg"
+  },
+  "strategy_domain_icons": {
+    "Personal": "icons/notion-icon-pack-personal-purple-a78bfa/chess-knight_gray.svg",
+    "Social": "icons/notion-icon-pack-social-red-f87171/chess-knight_gray.svg",
+    "Experiential": "icons/notion-icon-pack-experiential-blue-60a5fa/chess-knight_gray.svg",
+    "Commercial": "icons/notion-icon-pack-commercial-green-4ade80/chess-knight_gray.svg"
+  },
+  "fixed_template_covers": {
+    "zMindSet 2026.": "covers/zmindset-2026.jpg",
+    "zFitness 2026.": "covers/fitness-2026.jpg",
+    "zCompanionship 2026.": "covers/companionship-2026.jpg",
+    "zFamilyship 2026.": "covers/familyship-2026.jpg",
+    "zExperience 2026.": "covers/zexperience-2026.jpg",
+    "zIncome 2026.": "covers/zincome-2026.jpg",
+    "zWorth 2026.": "covers/zworth-2026.jpg",
+    "PJournal 2026.": "covers/pjournal-2026.jpg",
+    "TJournal 2026.": "covers/tjournal-2026.jpg"
+  },
+  "generic_template_cover_rule": {
+    "Personal": null,
+    "Social": null,
+    "Experiential": null,
+    "Commercial": null
+  }
+}

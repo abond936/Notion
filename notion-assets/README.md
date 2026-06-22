@@ -1,49 +1,59 @@
-# Notion Asset Library for GitHub Pages
+# Notion Asset Library
 
-This folder is a Pages-ready asset library for Notion icons and covers.
+This folder is the live external asset host for Notion object icons and covers.
+
+## Current Host
+
+- repository: `abond936/Notion`
+- asset root in repo: `notion-assets/`
+- proven working URL pattern in this workspace:
+  - `https://raw.githubusercontent.com/abond936/Notion/main/notion-assets/<path>`
+
+GitHub Pages can also be used later, but the current working Notion cover and icon workflow is based on the raw GitHub HTTPS URLs above.
 
 ## Purpose
 
-Use GitHub Pages as the stable HTTPS host for:
+Use this folder as the stable external host for:
 
 - reusable Notion page icons
 - reusable Notion page covers
 
-This avoids short-lived or UI-only asset paths and gives the agent a predictable URL pattern.
-
-## Recommended Repository
-
-Create a dedicated repository such as:
-
-- `notion-assets`
-- `notion-asset-library`
-
-Recommended visibility:
-
-- public, if the images are not sensitive
-
-GitHub Pages then serves files like:
-
-- `https://<owner>.github.io/<repo>/icons/<file>.svg`
-- `https://<owner>.github.io/<repo>/covers/<file>.png`
+This avoids short-lived Notion attachment URLs and makes the asset path predictable for agent-driven object creation.
 
 ## Folder Layout
 
-- `icons/`: page icon assets
-- `covers/`: cover images
-- `index.html`: simple browser check
-- `asset-map.example.json`: optional mapping structure for Notion-side cataloging
+- `icons/`: hosted icon assets
+- `covers/`: hosted cover images
+- `index.html`: quick browser check
+- `asset-map.json`: working asset map for this workspace
+- `asset-map.example.json`: shape example only
 
-## Initial Workflow
+## Working Rule
 
-1. Create the GitHub repository.
-2. Copy this folder's contents into the repository root.
-3. Enable GitHub Pages from the default branch root.
-4. Upload or commit new cover files into `covers/`.
-5. Use the resulting HTTPS URLs as Notion page covers.
+- Notion remains the operating surface.
+- This repository is the canonical external asset host.
+- Generic object templates should rely on stable icon URLs from this folder.
+- Fixed-cover templates should rely on stable cover URLs from this folder.
+- Generic templates that intentionally have no cover should keep no cover.
 
-## Notes
+## Current Asset Classes
 
-- Icons can continue to be set either from uploaded assets or from the existing local icon workflow.
-- Covers should use normal hosted image files such as PNG or JPG.
-- The agent should treat this repository as the canonical external asset host, while Notion remains the operating surface.
+- base gray icon set
+- light icon variants
+- current populated light icon variant:
+  - `notion-icon-pack-light-f1f1ef`
+- domain-colored icon variants:
+  - personal purple
+  - social red
+  - experiential blue
+  - commercial green
+- fixed cover images for the current special strategy and journal templates
+
+## Agent Rule
+
+Before setting an icon or cover in Notion:
+
+1. Resolve the intended object/template rule from Notion canon.
+2. Resolve the asset path from `asset-map.json`.
+3. Build the full raw GitHub URL.
+4. Apply that URL directly in Notion.
